@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: Apache-2.0
+name: CLA & DCO
+
+# Starter workflow for the CLA and DCO checks. A contributor signs the CLA by
+# adding a row to .github/CONTRIBUTORS.md in a commit of their own, so this
+# needs no comment trigger, no write permission and no secret.
+#
+# Before you commit it:
+# 1. Copy .github/CONTRIBUTORS.md, ICLA.md and CCLA.md from the project
+#    template into your repository's .github folder.
+# 2. Replace COMMIT_SHA below (twice) with one full commit SHA of
+#    pragmatic-engineer/.github that contains this workflow. Pin it like any
+#    other action and bump it when the shared workflow changes.
+#
+# The job id must stay `cla-dco` so the required checks read `cla-dco / dco`
+# and `cla-dco / cla-check`.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  merge_group:
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  cla-dco:
+    name: cla-dco
+    permissions:
+      contents: read # the called jobs fetch the pull request commits
+      pull-requests: read # the called jobs list the commits with their logins
+    uses: pragmatic-engineer/.github/.github/workflows/cla-dco-checks.yml@COMMIT_SHA # main
+    with:
+      tooling-ref: COMMIT_SHA
