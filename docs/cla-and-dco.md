@@ -19,7 +19,7 @@ The caller job is named `cla-dco`, so the required checks read `cla-dco / dco` a
 2. Add `workflow-templates/cla-dco.yml` as `.github/workflows/cla-dco.yml`. Replace `COMMIT_SHA` twice with one commit SHA of this repository that contains the workflow. The first sets the workflow version, and the second makes the workflow fetch `scripts/cla-check.sh` at that same commit, so a pull request cannot change the checker it runs under.
 3. Require the checks `cla-dco / dco` and `cla-dco / cla-check`.
 
-Inputs of the reusable workflow: `signatures-file`, `cla-path`, `statement`, `extra-bots`, `script`, `tooling-repository` and `tooling-ref`. With no `tooling-ref`, the script is read from the caller repository at `scripts/cla-check.sh`, which is how this repository and the project template run it.
+Inputs of the reusable workflow: `signatures-file`, `cla-path`, `statement`, `extra-bots`, `ignored-coauthors`, `extra-ignored-coauthors`, `script`, `tooling-repository` and `tooling-ref`. With no `tooling-ref`, the script is read from the caller repository at `scripts/cla-check.sh`, which is how this repository and the project template run it.
 
 ## What `cla-check` verifies
 
@@ -28,7 +28,17 @@ Inputs of the reusable workflow: `signatures-file`, `cla-path`, `statement`, `ex
 3. A pull request signs for someone only when a row it adds is introduced by a commit authored by that same person, and that commit message holds the sentence `I have read the CLA Document and I hereby sign the CLA.` Case and line wraps do not matter.
 4. A pull request may not edit or remove an existing row.
 
-A person matches a row by login, by email, or by the account id inside a GitHub noreply address, which survives a login rename. Bots, merge commits and `Co-authored-by` trailers are not checked. Maintainers sign like everyone else. An agent commits as its owner, so the owner's row covers it.
+A person matches a row by login, by email, or by the account id inside a GitHub noreply address, which survives a login rename. Bots and merge commits are skipped. Maintainers sign like everyone else. An agent commits as its owner, so the owner's row covers it.
+
+## Co-authors
+
+Every line that starts with `Co-authored-by:` in any pull request commit (key in any case, many per commit, bot-authored commits included) names a person who must be signed, matched by email or by the account id or login in a noreply address. The same person as a commit author is checked once, as an author. A co-author who is not on the default branch list, and does not add their own row in a commit they author in this pull request, fails the check. The message names the person and says that they add a row in a commit they author. Their own pull request is enough.
+
+A trailer that is not `Name <email>` fails closed with a clear message, unless it matches the ignore list.
+
+AI tools and bots are ignored. The built-in list is `[bot]`, `noreply@anthropic.com`, `noreply@github.com`, and the words `github-actions`, `dependabot`, `renovate`, `claude`, `anthropic`, `copilot`, `chatgpt`, `openai`, `codex`, `gemini`, `cursor`, `devin`, `aider`, `windsurf`, `codeium`, `tabnine` and `sweep`. A pattern with `@` or `[` is a substring of the email or name. Any other pattern is a whole word in the name or email, so a person named Claude is also skipped. Treat the trailer as a declaration, not proof: anyone can write any name in it.
+
+To add tools, set the `extra-ignored-coauthors` input (comma separated). To replace the whole list, set `ignored-coauthors`.
 
 ## Rollout for existing repositories
 
