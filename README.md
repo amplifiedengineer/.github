@@ -11,7 +11,10 @@ Organization profile and default community health files for [pragmatic-engineer]
 | `.github/ISSUE_TEMPLATE/` | Default bug report and feature request forms. |
 | `.github/PULL_REQUEST_TEMPLATE.md` | Default pull request template. |
 | `.github/FUNDING.yml` | Default sponsor button. |
-| `.github/workflows/` | CI for this repo only: PR title lint, secret scan and dependency review. |
+| `.github/workflows/` | CI for this repo, plus the reusable `cla-dco-checks.yml` that other repos call by commit. |
+| `scripts/cla-check.sh` | The script behind the CLA and DCO checks, with offline tests. |
+| `workflow-templates/` | Starter workflow for the CLA and DCO checks, offered to organization repos. |
+| `docs/cla-and-dco.md` | How a contributor signs the CLA by commit, and how a repo adopts the checks. |
 
 A repo that adds its own version of a file uses that file instead of the default here. Keep these files generic, and use absolute links, because relative links break when GitHub shows a default file in another repo.
 

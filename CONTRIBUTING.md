@@ -15,7 +15,7 @@ Thank you for helping. This page applies to every pragmatic-engineer repo that h
 - Keep a PR focused on one change and link the issue it closes.
 - Fill in the pull request template.
 - Write the description yourself and be ready to explain every change.
-- Some repos also require a contributor license agreement. The PR will tell you if yours does.
+- Some repos also require a contributor license agreement. The PR will tell you if yours does. Where one is required, you sign by adding your own row to `.github/CONTRIBUTORS.md` in a commit you author, with the sentence `I have read the CLA Document and I hereby sign the CLA.` in its message. See [the CLA and DCO notes](https://github.com/pragmatic-engineer/.github/blob/main/docs/cla-and-dco.md).
 
 ## Checks
 

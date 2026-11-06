@@ -1,0 +1,7 @@
+{
+  "name": "CLA & DCO checks",
+  "description": "Checks that every commit has a Signed-off-by trailer and that every author signed the CLA by committing a row to .github/CONTRIBUTORS.md.",
+  "iconName": "octicon law",
+  "categories": ["Code Review"],
+  "filePatterns": ["^\\.github/CONTRIBUTORS\\.md$"]
+}
