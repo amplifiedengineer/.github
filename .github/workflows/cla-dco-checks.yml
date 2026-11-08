@@ -51,7 +51,7 @@ on:
       tooling-repository:
         description: Repository that holds the check script when tooling-ref is set.
         type: string
-        default: pragmatic-engineer/.github
+        default: amplifiedengineer/.github
       tooling-ref:
         description: Full commit SHA of the tooling repository. When set, the script is fetched from there at that commit instead of being read from the caller repository.
         type: string

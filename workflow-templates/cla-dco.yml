@@ -9,7 +9,7 @@ name: CLA & DCO
 # 1. Copy .github/CONTRIBUTORS.md, ICLA.md and CCLA.md from the project
 #    template into your repository's .github folder.
 # 2. Replace COMMIT_SHA below (twice) with one full commit SHA of
-#    pragmatic-engineer/.github that contains this workflow. Pin it like any
+#    amplifiedengineer/.github that contains this workflow. Pin it like any
 #    other action and bump it when the shared workflow changes.
 #
 # The job id must stay `cla-dco` so the required checks read `cla-dco / dco`
@@ -31,6 +31,6 @@ jobs:
     permissions:
       contents: read # the called jobs fetch the pull request commits
       pull-requests: read # the called jobs list the commits with their logins
-    uses: pragmatic-engineer/.github/.github/workflows/cla-dco-checks.yml@COMMIT_SHA # main
+    uses: amplifiedengineer/.github/.github/workflows/cla-dco-checks.yml@COMMIT_SHA # main
     with:
       tooling-ref: COMMIT_SHA

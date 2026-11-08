@@ -2,8 +2,8 @@
 
 ## Documentation
 
-- [Playbook docs](https://github.com/pragmatic-engineer/playbook/blob/main/docs/README.md)
-- [Playbook README](https://github.com/pragmatic-engineer/playbook#readme)
+- [Playbook docs](https://github.com/amplifiedengineer/playbook/blob/main/docs/README.md)
+- [Playbook README](https://github.com/amplifiedengineer/playbook#readme)
 - In a Claude Code session, run `/playbook:doctor` to check your setup.
 
 ## Questions and bugs
@@ -14,7 +14,7 @@
 
 ## Security
 
-Do not open a public issue for a vulnerability. Follow the [security policy](https://github.com/pragmatic-engineer/.github/blob/main/SECURITY.md).
+Do not open a public issue for a vulnerability. Follow the [security policy](https://github.com/amplifiedengineer/.github/blob/main/SECURITY.md).
 
 ## Response times
 

@@ -1,6 +1,6 @@
 # Contributors
 
-Thank you to everyone who has signed the [Individual CLA](https://github.com/pragmatic-engineer/playbook/blob/main/.github/ICLA.md) or [Corporate CLA](https://github.com/pragmatic-engineer/playbook/blob/main/.github/CCLA.md) and contributed to this project.
+Thank you to everyone who has signed the [Individual CLA](https://github.com/amplifiedengineer/playbook/blob/main/.github/ICLA.md) or [Corporate CLA](https://github.com/amplifiedengineer/playbook/blob/main/.github/CCLA.md) and contributed to this project.
 
 This file is the register of signatures. To sign, add your own row to the table below in a commit you author, in your first pull request. Put this sentence in that commit message: `I have read the CLA Document and I hereby sign the CLA.` Rows are never edited or removed. The Email cell is optional; add the address you commit with, so the signature still matches if your GitHub login changes. The markers keep their old `CLA-BOT` name so older tools can still read the table.
 
@@ -14,4 +14,4 @@ This file is the register of signatures. To sign, add your own row to the table 
 
 ## Corporate Contributors
 
-No corporate CLAs signed yet. See the [Corporate CLA](https://github.com/pragmatic-engineer/playbook/blob/main/.github/CCLA.md) for instructions.
+No corporate CLAs signed yet. See the [Corporate CLA](https://github.com/amplifiedengineer/playbook/blob/main/.github/CCLA.md) for instructions.

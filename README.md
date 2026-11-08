@@ -1,6 +1,6 @@
 # .github
 
-Organization profile and default community health files for [pragmatic-engineer](https://github.com/pragmatic-engineer).
+Organization profile and default community health files for [The Amplified Engineer](https://github.com/amplifiedengineer).
 
 ## What is here
 
