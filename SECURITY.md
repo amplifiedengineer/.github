@@ -1,6 +1,6 @@
 # Security Policy
 
-This policy applies to every repository in the pragmatic-engineer organization that has no SECURITY.md of its own.
+This policy applies to every repository in the amplifiedengineer organization that has no SECURITY.md of its own.
 
 ## Reporting a vulnerability
 
