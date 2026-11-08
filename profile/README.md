@@ -1,13 +1,13 @@
-# amplifiedengineer
+# The Amplified Engineer
 
-> **Renamed.** This organization was `pragmatic-engineer`. It is now `amplifiedengineer`. GitHub redirects the old addresses, but do not rely on that. If you installed Playbook before the rename, remove the old install and install again. Your data stays in `~/.config/playbook`.
+> **Renamed.** This organization was `pragmatic-engineer`. It is now The Amplified Engineer, with the handle `amplifiedengineer`. GitHub redirects the old addresses, but do not rely on that. If you installed Playbook before the rename, remove the old install and install again. Your data stays in `~/.config/playbook`.
 >
 > - **Homebrew:** `brew uninstall playbook`, then `brew untap pragmatic-engineer/tap`, then `brew install amplifiedengineer/tap/playbook`.
 > - **Nix:** `nix profile remove playbook`, then `nix profile install github:amplifiedengineer/nix#playbook`.
 > - **Claude Code plugin:** `claude plugin marketplace remove pragmatic-engineer`, then `claude plugin marketplace add amplifiedengineer/marketplace`, then `claude plugin install playbook@pragmatic-engineer`. The marketplace name stays `pragmatic-engineer`.
 > - **Install script:** run it again from the new address, shown below.
 
-We build tools for engineering with AI help. Our main project is Playbook, a toolkit for Claude Code. It adds skills, slash commands and subagents for planning, review and memory, plus a small `playbook` binary that runs safety guards and hooks.
+The Amplified Engineer builds a pragmatic toolset for software engineers that uses coding agents. Our main project is Playbook, a toolkit for Claude Code. It adds skills, slash commands and subagents for planning, review and memory, plus a small `playbook` binary that runs safety guards and hooks.
 
 ## Repos
 

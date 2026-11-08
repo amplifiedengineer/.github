@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping. This page applies to every amplifiedengineer repo that has no CONTRIBUTING.md of its own. If a repo has one, follow that file first.
+Thank you for helping. This page applies to every repo of The Amplified Engineer that has no CONTRIBUTING.md of its own. If a repo has one, follow that file first.
 
 ## Before you start
 
@@ -27,4 +27,4 @@ Report vulnerabilities privately. See the [security policy](https://github.com/a
 
 ## License
 
-Contributions are licensed under the license of the repo you contribute to, which is Apache-2.0 for the amplifiedengineer projects.
+Contributions are licensed under the license of the repo you contribute to, which is Apache-2.0 for The Amplified Engineer projects.
