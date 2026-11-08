@@ -4,7 +4,7 @@
 >
 > - **Homebrew:** `brew uninstall playbook`, then `brew untap pragmatic-engineer/tap`, then `brew install amplifiedengineer/tap/playbook`.
 > - **Nix:** `nix profile remove playbook`, then `nix profile install github:amplifiedengineer/nix#playbook`.
-> - **Claude Code plugin:** `claude plugin marketplace remove pragmatic-engineer`, then `claude plugin marketplace add amplifiedengineer/marketplace`, then `claude plugin install playbook@pragmatic-engineer`. The marketplace name stays `pragmatic-engineer`.
+> - **Claude Code plugin:** the marketplace and the plugin id were renamed too. Update the `playbook` binary first. An install on the old id keeps working until you move. To move, run `claude plugin uninstall playbook@pragmatic-engineer`, then `claude plugin marketplace remove pragmatic-engineer`, then `claude plugin marketplace add amplifiedengineer/marketplace`, then `claude plugin install playbook@amplifiedengineer`.
 > - **Install script:** run it again from the new address, shown below.
 
 The Amplified Engineer builds a pragmatic toolset for software engineers that uses coding agents. Our main project is Playbook, a toolkit for Claude Code. It adds skills, slash commands and subagents for planning, review and memory, plus a small `playbook` binary that runs safety guards and hooks.
@@ -45,10 +45,8 @@ Claude Code plugin only, with no binary or hooks:
 
 ```sh
 claude plugin marketplace add amplifiedengineer/marketplace
-claude plugin install playbook@pragmatic-engineer
+claude plugin install playbook@amplifiedengineer
 ```
-
-The marketplace name is still `pragmatic-engineer` from before the rename. The plugin id keeps that name.
 
 Read the [playbook README](https://github.com/amplifiedengineer/playbook#readme) and the [docs](https://github.com/amplifiedengineer/playbook/blob/main/docs/README.md) to get started.
 
