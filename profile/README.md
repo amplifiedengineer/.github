@@ -48,7 +48,7 @@ claude plugin marketplace add amplifiedengineer/marketplace
 claude plugin install playbook@pragmatic-engineer
 ```
 
-The marketplace name is still `pragmatic-engineer` from before the rename, so the plugin id keeps that name.
+The marketplace name is still `pragmatic-engineer` from before the rename. The plugin id keeps that name.
 
 Read the [playbook README](https://github.com/amplifiedengineer/playbook#readme) and the [docs](https://github.com/amplifiedengineer/playbook/blob/main/docs/README.md) to get started.
 
