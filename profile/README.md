@@ -14,11 +14,10 @@ The Amplified Engineer builds a pragmatic toolset for software engineers that us
 | Repo | What it does |
 |---|---|
 | [playbook](https://github.com/amplifiedengineer/playbook) | The Claude Code plugin, the `playbook` binary, the `pbtop` cost dashboard and the docs. |
+| [helios](https://github.com/amplifiedengineer/helios) | A terminal client for reviewing pull requests. Work in progress, with no release yet. |
 | [marketplace](https://github.com/amplifiedengineer/marketplace) | The Claude Code plugin marketplace that lists the playbook plugin. |
 | [homebrew-tap](https://github.com/amplifiedengineer/homebrew-tap) | Homebrew formulas for `playbook` and `pbtop`. |
 | [nix](https://github.com/amplifiedengineer/nix) | Nix flake for `playbook` and `pbtop`. |
-| [helios](https://github.com/amplifiedengineer/helios) | A terminal client for reviewing pull requests. Work in progress, with no release yet. |
-| [.github](https://github.com/amplifiedengineer/.github) | This profile and the default community files. |
 
 ## Install Playbook
 
